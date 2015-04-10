@@ -9,17 +9,22 @@
   </head>
   <body>
     <header>
-        <h1>Tytuł strony</h1>
-        <button id="newPost">Dodaj nowy post</button>
+        <h1>Bezliku blog</h1>
+        <button id="newPost">Dodaj post</button>
+        <button id="deletePost">Usuń post</button>
     </header>
-    <form id="newPostForm">
 
-    </form>    
-    <section>
-      <h2>Tytuł posta</h2>
-      <h3>Autor</h3>
-      <p>Treść posta</p>
-    </section>
+    <form id="newPostForm" method="post">
+      <label>Tytuł:</label><input type="text" name="title" id="tytul" />
+      <label>Autor:</label><input type="text" name="author" id="autor" />
+      <label>Treść:</label><input type="text" name="content" id="tresc" />
+      <button type="button" name="send" id="sendPost">Wyślij</button>
+    </form>  
+
+    <form id="deletePostForm" method="post">
+      <label>ID postu:</label><input type="text" name="id" id="id" />
+      <button type="button" name="send" id="deletePostID">Usuń</button>
+    </form> 
 
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="custom.js"></script>
