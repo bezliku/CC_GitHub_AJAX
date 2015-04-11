@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/CodeCarrotsJS/CC_GitHub_AJAX.git"
+    "url": "https://github.com/bezliku/CC_GitHub_AJAX.git"
   },
   "author": "Marta Hawełko",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CodeCarrotsJS/CC_GitHub_AJAX/issues"
+    "url": "https://github.com/bezliku/CC_GitHub_AJAX/issues"
   },
-  "homepage": "https://github.com/CodeCarrotsJS/CC_GitHub_AJAX",
+  "homepage": "https://github.com/bezliku/CC_GitHub_AJAX",
   "dependencies": {
     "json-server": "^0.6.8"
   }
