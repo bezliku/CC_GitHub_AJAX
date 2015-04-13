@@ -3,7 +3,6 @@ body {
   margin: 0 auto;
 }
 
-
 header h1 {
   float: left;
   font-size: 3em;
@@ -13,6 +12,8 @@ header h1 {
 header button {
   float: right;
   cursor: pointer;
+  padding: 15px;
+  margin: 40px 20px 10px 0;
 }
 
 header button:hover {
@@ -20,7 +21,7 @@ header button:hover {
   color: white;
 }
 
-form {
+.formContainer {
   display: none;
   background-color: white;
   opacity: .95;
@@ -28,7 +29,10 @@ form {
   height: 100%;
   position: fixed;
   z-index: 10;
-  padding: 200px 400px;
+}
+
+form {
+  padding: 100px 300px;
 }
 
 input {
@@ -36,8 +40,39 @@ input {
   display: block;
 }
 
+textarea {
+  font-size: 18px;
+  display: block;
+  height: 300px;
+  width: 400px;
+}
+
 label {
   display: block;
+  margin: 25px 0 8px 0;
+  font-size: 18px;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  width: 100px;
+}
+
+form button:hover {
+color: white;
+background-color: black;
+
+}
+
+.closeForm {
+  position: fixed;
+  top: 7%;
+  right: 15%;
+  font-size: 55px;
+  cursor: pointer;
 }
 
 section {
@@ -58,11 +93,6 @@ section h1 {
 article {
   float: left;
   width: 85%;
-}
-
-header button {
-  padding: 15px;
-  margin: 10px;
 }
 
 .readMore {

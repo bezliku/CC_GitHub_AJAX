@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title>Page title</title>
+    <title>Bezliku blog</title>
     <link rel="stylesheet" href="style.css">
+    <script src="ckeditor/ckeditor.js"></script>
   </head>
   <body>
     <header>
@@ -13,18 +14,23 @@
         <button id="newPost">Dodaj post</button>
         <button id="deletePost">Usuń post</button>
     </header>
+    <div class="formContainer" id="newPostFormContainer">
+      <div class="closeForm">&#10006;</div>
+      <form id="newPostForm" method="post">
+        <label for="tytul">Tytuł:</label><input type="text" name="title" id="tytul" autofocus />
+        <label for="tresc">Treść:</label><textarea type="text" name="content" id="tresc"></textarea>
+        <label for="autor">Autor:</label><input type="text" name="author" id="autor" />
+        <button type="button" name="send" id="sendPost">Dodaj</button>
+      </form>  
+    </div>
 
-    <form id="newPostForm" method="post">
-      <label>Tytuł:</label><input type="text" name="title" id="tytul" />
-      <label>Autor:</label><input type="text" name="author" id="autor" />
-      <label>Treść:</label><input type="text" name="content" id="tresc" />
-      <button type="button" name="send" id="sendPost">Wyślij</button>
-    </form>  
-
-    <form id="deletePostForm" method="post">
-      <label>ID postu:</label><input type="text" name="id" id="id" />
-      <button type="button" name="send" id="deletePostID">Usuń</button>
-    </form> 
+    <div class="formContainer" id="deletePostFormContainer">
+      <div class="closeForm">&#10006;</div>
+      <form id="deletePostForm" method="post">
+        <label for="id">ID postu:</label><input type="text" name="id" id="id" autofocus/>
+        <button type="button" name="send" id="deletePostID">Usuń</button>
+      </form> 
+    </div>
 
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="custom.js"></script>
