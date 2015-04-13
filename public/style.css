@@ -113,13 +113,9 @@ color: white;
 
 }
 
-.unactive {
+p {
   display: none;
-  
 }
 
-.active {
-  display: block;
 
-}
 

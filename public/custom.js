@@ -1,5 +1,4 @@
 /*Utworzenie posta i nadanie elementom treści, oraz odpowiednich klas i id*/
-
 function createPost(data) {
   var s = document.createElement("section"),
       a = document.createElement("article"),
@@ -7,15 +6,14 @@ function createPost(data) {
       h2 = document.createElement("h2"),
       h3 = document.createElement("h3"),
       p = document.createElement("p"),
-      b = document.createElement("div");
-    
+      b = document.createElement("div");   
+  
   id.innerText = data.id;
   h2.innerText = data.title;
   h3.innerText = "Autor: " + data.author;
   p.innerText = data.content;
   b.innerText = "Przeczytaj";
-
-  p.setAttribute("class", "unactive");
+  
   b.setAttribute("class", "readMore"); 
   id.setAttribute("id", data.id);
 
@@ -28,7 +26,7 @@ function createPost(data) {
   a.appendChild(p);
 
   $(".readMore").click(function(){
-    $(this).next("p").toggleClass("unactive active");
+    $(this).next().toggle();
   });
 };
 
@@ -39,7 +37,7 @@ function createPost(data) {
 function success(data) {
   for (var i = 0; i < data.length; i++) {
     var post = data[i];
-    var postElem = createPost(post);
+    createPost(post);
   };
 };
 
