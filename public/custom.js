@@ -120,7 +120,6 @@ $('#deletePostID').click(function(){
       parent.remove();
     }
   });
-
   $("#id").val("");
 });
 
