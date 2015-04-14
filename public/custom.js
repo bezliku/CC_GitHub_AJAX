@@ -70,10 +70,10 @@ $("body").keyup(function(e){
 /*Schowanie formularza po kliku "Wyślij"
   Zapisanie dodanego postu
 */
+  
 
 $('#sendPost').click(function(){
   $("#newPostFormContainer").hide();
-
   var formularz = $("#newPostForm");
   var data = formularz.serialize();
 
