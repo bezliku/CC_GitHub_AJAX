@@ -1,8 +1,22 @@
 {
-  "name": "cc-bezlikublog",
-  "version": "0.0.1",
-  "description": "bezliku blog",
-  "engines": {
-    "node": "0.12.1"
+  "name": "CC_GitHub_AJAX",
+  "version": "0.1.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bezliku/CC_GitHub_AJAX.git"
+  },
+  "author": "Marta Hawełko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bezliku/CC_GitHub_AJAX/issues"
+  },
+  "homepage": "https://github.com/bezliku/CC_GitHub_AJAX",
+  "dependencies": {
+    "json-server": "^0.6.8"
   }
 }
