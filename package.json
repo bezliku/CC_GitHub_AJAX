@@ -2,15 +2,7 @@
   "name": "cc-bezlikublog",
   "version": "0.0.1",
   "description": "bezliku blog",
-  "scripts": {
-    "start": "custom.js"
-  },
-
   "engines": {
     "node": "0.12.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/bezliku/CC_GitHub_AJAX"
   }
 }
