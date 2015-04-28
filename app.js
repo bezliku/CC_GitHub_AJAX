@@ -1,5 +1,5 @@
 var jsonServer = require("json-server");
-var port = 80;
+var port = 8000;
 
 var router = jsonServer.router("db.json");
 var server = jsonServer.create();
